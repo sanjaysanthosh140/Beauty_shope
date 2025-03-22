@@ -1,0 +1,224 @@
+.service-section {
+    text-align: center;
+    background: #0d0d0d;
+    color: white;
+    padding: 50px 20px; /* Added horizontal padding */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .service-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 0 15px;
+  }
+  
+  .service-header h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .service-header h2 {
+    font-size: clamp(24px, 5vw, 32px); /* Responsive font size */
+    margin: 10px 0;
+  }
+  
+  .service-header p {
+    color: #b0b0b0;
+    font-size: clamp(14px, 3vw, 16px); /* Responsive font size */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Carousel Container */
+  .service-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Scrollable Service List */
+  .service-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 20px 10px;
+    width: 100%;
+  }
+  
+  .service-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Service Card */
+  .service-card {
+    min-width: 250px;
+    max-width: 350px;
+    flex: 1 0 auto;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      min-width: 220px; /* Smaller cards on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-card {
+      min-width: 200px; /* Even smaller cards on small mobile */
+    }
+  }
+  
+  .service-card:hover {
+    transform: scale(1.03); /* Slightly reduced scale for better mobile experience */
+  }
+  
+  .service-image {
+    width: 100%;
+    aspect-ratio: 16/9; /* Maintain consistent image ratio */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    line-height: 1.3;
+  }
+  
+  .service-card p {
+    color: #b0b0b0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer with User Info */
+  .service-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .user-icon {
+    background: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .service-footer div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .service-footer strong {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  
+  .service-footer p {
+    font-size: 12px;
+    margin: 0;
+    color: #888;
+  }
+  
+  /* Navigation Arrows */
+  .arrow {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .arrow:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .left {
+    left: 5px;
+  }
+  
+  .right {
+    right: 5px;
+  }
+  
+  /* Hide arrows on small screens and show them on hover */
+  @media (max-width: 768px) {
+    .arrow {
+      opacity: 0.5;
+      width: 35px;
+      height: 35px;
+      font-size: 18px;
+    }
+    
+    .service-carousel:hover .arrow {
+      opacity: 1;
+    }
+  }
+  
+  /* Dots for Indicating Scroll */
+  .dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  
+  .dot.active {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  
