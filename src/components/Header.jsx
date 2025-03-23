@@ -68,10 +68,10 @@ const Header = () => {
         <nav className={`nav ${menuActive ? 'active' : ''}`}>
           <ul>
             <li><a href="/" onClick={closeMenu}>Home</a></li>
-            <li><a href="/services" onClick={closeMenu}>Services</a></li>
+            <li><a href="/services" onClick={closeMenu}>Service</a></li>
             <li><a href="/about" onClick={closeMenu}>About Us</a></li>
             <li><a href="/details" onClick={closeMenu}>Details</a></li>
-            <li><a href="/Blog" onClick={closeMenu}>Gallery</a></li>
+            <li><a href="/Blog" onClick={closeMenu}>Gallerys</a></li>
           </ul>
           
           {/* Mobile buttons that only appear in mobile menu */}
