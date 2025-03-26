@@ -1,0 +1,87 @@
+.hair-container {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .hair-header {
+    margin-bottom: 40px;
+  }
+  
+  .hair-tagline {
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+  
+  .hair-heading {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .hair-description {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  
+  .hair-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .hair-card {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hair-card-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hair-card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .hair-card-desc {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .hair-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hair-button:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .hair-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hair-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
