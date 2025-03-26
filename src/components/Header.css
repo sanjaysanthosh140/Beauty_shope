@@ -238,3 +238,27 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* Add these styles for the logo image */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1001;
+}
+
+.logo-image {
+  height: 40px; /* Adjust the height as needed */
+  width: auto;
+  max-width: 100%;
+}
+
+/* For mobile screens, you might want to adjust the logo size */
+@media (max-width: 576px) {
+  .logo-image {
+    height: 30px; /* Smaller logo for mobile */
+  }
+}

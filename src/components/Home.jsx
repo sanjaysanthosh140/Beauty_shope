@@ -12,8 +12,10 @@ import  image9 from "../assets/Images/istockphoto-1461009215-2048x2048.jpg";
 import  image10 from "../assets/Images/hair-5473204_1280.jpg";
 import  image11 from "../assets/Images/hair-salon-5200393_1280.jpg";
 import  image12 from "../assets/Images/hairdresser-4666064_1280.jpg";
-
+//import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 const Home = () => {
+  const navigate = useNavigate();
   const column1Ref = useRef(null);
   const column2Ref = useRef(null);
   const column3Ref = useRef(null);
@@ -117,8 +119,12 @@ const Home = () => {
           beauty while caring for the planet.
         </p>
         <div className="buttons">
-          <button className="btn-filled">Book Now</button>
-          <button className="btn-outline">Learn More</button>
+          <button className="btn-filled"
+          onClick={() => navigate('/Gents')}
+          >service for Gents</button>
+          <button className="btn-outline" 
+          onClick={() => navigate('/LadysSrv')}
+          >service for ladys</button>
         </div>
       </div>
 

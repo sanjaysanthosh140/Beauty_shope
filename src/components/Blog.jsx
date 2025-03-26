@@ -1,23 +1,31 @@
 import React from "react";
 import "./Blog.css";
-import blogImage from "../assets/Images/2090258 (1).jpg"
+import blogImage from "../assets/Images/2090258 (1).jpg";
 const Blog = () => {
   return (
     <section className="blog">
       <div className="blog-content">
-        <h2 className="blog-heading">Long heading is what you see here in this feature section</h2>
+        <h2 className="blog-heading">The Black Unisex Salon Experience</h2>
         <p className="blog-description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. 
-          Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+          Welcome to the Black Unisex Salon, where style meets inclusivity.
         </p>
         <div className="blog-stats">
           <div className="stat">
             <h3>50%</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              Book your session in our sleek black studio today. Walk out not
+              just styled—redefined
+            </p>
           </div>
           <div className="stat">
-            <h3>50%</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>90%</h3>
+            <p>
+              <span>Gender-Inclusive Expertise</span> – Flawless services
+              tailored for all Signature
+              <span>Black Aesthetic</span> – A vibe as sharp as your haircut
+              <span>Premium Products</span> – Professional-grade care without
+              compromise"
+            </p>
           </div>
         </div>
       </div>

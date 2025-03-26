@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
+// Import your logo image - update the path as needed
+import logoImage from "../assets/Images/logo.jpg"; // Change this path to your actual logo file
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -54,10 +56,12 @@ const Header = () => {
   return (
     <>
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-        <div className="logo">Logo</div>
+        <div className="logo">
+          <img src={logoImage} alt="Company Logo" className="logo-image" />
+        </div>
        
-        <button 
-          className="mobile-menu-btn" 
+        <button
+          className="mobile-menu-btn"
           onClick={toggleMenu}
           aria-label={menuActive ? "Close menu" : "Open menu"}
           aria-expanded={menuActive}
@@ -88,8 +92,8 @@ const Header = () => {
       </header>
      
       {/* Overlay for mobile menu */}
-      <div 
-        className={`menu-overlay ${menuActive ? 'active' : ''}`} 
+      <div
+        className={`menu-overlay ${menuActive ? 'active' : ''}`}
         onClick={closeMenu}
         aria-hidden="true"
       />
