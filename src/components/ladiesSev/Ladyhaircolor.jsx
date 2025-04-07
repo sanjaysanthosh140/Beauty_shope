@@ -8,54 +8,47 @@ const Ladyhaircolor = () => {
       id: 1,
       icon: "✂️",
       title: "✨ Hair Foils",
-      price: " $0/-",
+      price: " $180/-",
       description:
-        "Dimensional highlights tailored to brighten your natural beauty.Precision-placed foils for sun-kissed luminosity and depth.",
+      
+        "(The cost may vary depending on the client’s hair length) Dimensional highlights tailored to brighten your natural beauty.Precision-placed foils for sun-kissed luminosity and depth.",
       time: "Time ()",
     },
+    
     {
       id: 2,
       icon: "✂️",
-      title: "🌈 Fashion Colors",
-      price: "0/-",
+      title: "🎨 Balayage",
+      price: "3000/-",
       description:
-        "Make a bold statement with vibrant pinks, blues or pastels!Semi-permanent dyes that pop while protecting your hair's health",
-      time: "Time ()",
+        "(The cost may vary depending on the client’s hair length) Seamless, hand-painted color melts for a luxurious sun-kissed effect.Low-maintenance grow-out with stunning natural dimension",
+      time: "Time()",
     },
     {
       id: 3,
       icon: "✂️",
-      title: "🎨 Balayage",
-      price: "700/-",
+      title: "SCHWARZKOPF",
+      price: "1500/-",
       description:
-        "Seamless, hand-painted color melts for a luxurious sun-kissed effect.Low-maintenance grow-out with stunning natural dimension",
-      time: "Time()",
+        "(The cost may vary depending on the client’s hair length) A premium hair color offering superior coverage and shine, ideal for a polished look. Takes 30-35 minutes for a professional finish.",
+      time: "Time (30-35min)",
     },
     {
       id: 4,
       icon: "✂️",
-      title: "SCHWARZKOPF",
-      price: "800/-",
+      title: "LOREAL MAJIREL",
+      price: "1500/-",
       description:
-        "A premium hair color offering superior coverage and shine, ideal for a polished look. Takes 30-35 minutes for a professional finish.",
-      time: "Time (30-35min)",
+        "(The cost may vary depending on the client’s hair length) A high-quality, ammonia-based hair color providing excellent gray coverage and shine. Takes 35-40 minutes for a luxurious, salon-like finish.",
+      time: "Time (35-40min)",
     },
     {
       id: 5,
       icon: "✂️",
-      title: "LOREAL MAJIREL",
-      price: "1000/-",
-      description:
-        "A high-quality, ammonia-based hair color providing excellent gray coverage and shine. Takes 35-40 minutes for a luxurious, salon-like finish.",
-      time: "Time (35-40min)",
-    },
-    {
-      id: 6,
-      icon: "✂️",
       title: "GLOBAL HAIR COLOR",
-      price: " 800/-",
+      price: " 2000/-",
       description:
-        "A versatile hair color option suitable for all hair types, offering rich and even coverage. Perfect for a bold, global look.",
+        "(The cost may vary depending on the client’s hair length) A versatile hair color option suitable for all hair types, offering rich and even coverage. Perfect for a bold, global look.",
       time: "Time (15-20 min)",
     },
   ];
@@ -92,7 +85,7 @@ const Ladyhaircolor = () => {
               <BiTimer />
             </h2>
             <p className="hair-card-desc">{card.description}</p>
-            <button className="hair-button">Button →</button>
+            <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
           </div>
         ))}
       </div>

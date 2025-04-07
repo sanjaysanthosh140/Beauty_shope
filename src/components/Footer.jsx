@@ -23,11 +23,11 @@ const Footer = () => {
           <div className="social-icons">
             <h4>Follow Us</h4>
             <ul>
-              <li><a href="#">📘 Facebook</a></li>
-              <li><a href="#">📷 Instagram</a></li>
-              <li><a href="#">❌ X</a></li>
-              <li><a href="#">🔗 LinkedIn</a></li>
-              <li><a href="#">▶️ YouTube</a></li>
+              {/* <li><a href="tel:+919072744555" target="_self" rel="">📘 Facebook</a></li> */}
+              <li><a href="https://www.instagram.com/b_blaak_unisex_salon/profilecard/?igsh=MWhhcHk5c2liYWc3dA==">📷 Instagram</a></li>
+              {/* <li><a href="#">❌ X</a></li> */}
+              {/* <li><a href="#">🔗 LinkedIn</a></li> */}
+              {/* <li><a href="#">▶️ YouTube</a></li> */}
             </ul>
           </div>
         </div>

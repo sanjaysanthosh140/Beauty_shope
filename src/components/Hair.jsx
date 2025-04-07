@@ -92,7 +92,7 @@ const Hair = () => {
             <h4 className="hair-card-title"><MdAttachMoney/>{card.price}</h4>
             <h2 className="hair-card-title">{card.time}<BiTimer/></h2>
             <p className="hair-card-desc">{card.description}</p>
-            {/* <button className="hair-button">Button →</button> */}
+            <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
           </div>
         ))}
       </div>

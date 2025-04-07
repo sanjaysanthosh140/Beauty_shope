@@ -27,7 +27,7 @@ const navigate = useNavigate();
         </p>
         <div className="buttons">
           <button className="btn-outline" onClick={()=>navigate('/LadysSrv')}>Go back</button>
-          <button className="btn-solid">Button →</button>
+          <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
         </div>
       </div>
       <div className="content-section">

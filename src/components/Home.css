@@ -174,7 +174,7 @@
 
 .gallery-item img {
   width: 100%;
-  height: 200px;
+  height: 200px; /* Increased base height for better visibility */
   object-fit: cover;
   display: block;
   transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -212,13 +212,11 @@
   .content {
     max-width: 45%;
   }
-
   .home h1 {
     font-size: 32px;
   }
-
   .gallery-item img {
-    height: 180px;
+    height: 180px; /* Good size for large screens */
   }
   
   :root {
@@ -232,21 +230,17 @@
   .home {
     padding: 40px 30px;
   }
-
   .content {
     max-width: 50%;
   }
-
   .home h1 {
     font-size: 28px;
   }
-
   .flowing-gallery {
     width: 45%;
   }
-
   .gallery-item img {
-    height: 160px;
+    height: 160px; /* Still good visibility */
   }
   
   :root {
@@ -263,21 +257,21 @@
     text-align: center;
     gap: 40px;
   }
-
   .content {
     max-width: 100%;
     order: 2;
   }
-
   .flowing-gallery {
     width: 100%;
     max-width: 600px;
     order: 1;
     height: 60vh;
   }
-
   .buttons {
     justify-content: center;
+  }
+  .gallery-item img {
+    height: 140px; /* Increased from your original for better visibility */
   }
   
   :root {
@@ -291,33 +285,40 @@
   .home {
     padding: 30px 20px;
   }
-
   .home h1 {
     font-size: 24px;
   }
-
   .home p {
     font-size: 14px;
   }
-
   .flowing-gallery {
     height: 50vh;
+    gap: 10px; /* Reduced gap for better use of space */
   }
-
   .gallery-item img {
-    height: 140px;
+    height: 120px; /* Significantly increased from 60px for visibility */
   }
-
   .buttons {
     flex-direction: column;
     width: 100%;
     max-width: 250px;
     margin: 0 auto;
   }
+  /* Reduce gap between gallery items for better layout */
+  .gallery-column {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 400px) {
   .gallery-item img {
-    height: 120px;
+    height: 100px; /* Increased from 50px for better visibility */
+  }
+  /* Further optimize for very small screens */
+  .flowing-gallery {
+    gap: 8px;
+  }
+  .gallery-column {
+    gap: 8px;
   }
 }

@@ -31,14 +31,14 @@ const Ladyhairstyil = () => {
       id: 3,
       title: "Refresh & Revive: Hair Wash + Blowdry",
       description:
-        "A quick salon-quality wash and style service for instant volume and shine in under 45 minutes!",
+        "A quick salon-quality wash and style service for instant volume and shine !",
       price:"₹500/-",
-      time: "Time (65mins)",
+      time: "Time (45mins)",
       hairImg:hairstyl4
     },
     {
       id: 4,
-      title: "Wash & Straightening Magic",
+      title: "Wash & Iorning Magic",
       description:
         "Get salon-smooth, straight hair with our professional ironing service - perfect for special occasions!(Time and price varies by hair length and thickness)",
       price: "₹800/-",
@@ -46,7 +46,6 @@ const Ladyhairstyil = () => {
       hairImg:hairstyl3
     },
 ]
-
   return (
     <div className="subdetail-container">
       <p className="section-tag">Hairstyling Services</p>
@@ -71,7 +70,7 @@ const Ladyhairstyil = () => {
 
       <div className="buttons-container">
         <button className="learn-more" onClick={()=>navigate('/LadysSrv')}>Go back</button>
-        <button className="sign-up">Sign Up →</button>
+        <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
       </div>
     </div>
   );

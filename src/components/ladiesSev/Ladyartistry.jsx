@@ -52,7 +52,7 @@ const Ladyartistry = () => {
 
       <div className="buttons-container">
         <button className="learn-more" onClick={()=>navigate('/LadysSrv')}>Go back</button>
-        <button className="sign-up">Sign Up →</button>
+        <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
       </div>
     </div>
   );

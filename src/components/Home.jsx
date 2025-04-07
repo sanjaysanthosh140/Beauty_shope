@@ -124,7 +124,7 @@ const Home = () => {
           >service for Gents</button>
           <button className="btn-outline" 
           onClick={() => navigate('/LadysSrv')}
-          >service for ladys</button>
+          >service for ladies</button>
         </div>
       </div>
 

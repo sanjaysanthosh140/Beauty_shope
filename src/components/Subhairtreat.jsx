@@ -17,7 +17,7 @@ const Subhairtreat = () => {
       description:
         "A deeply relaxing hot oil treatment to nourish roots, boost blood circulation, and promote healthy hair growth.",
       price: "₹400/-",
-      time: "Time (10 mins)",
+      time: "Time (15 mins)",
       spaimage:hairspa1
     },
     {
@@ -26,7 +26,7 @@ const Subhairtreat = () => {
       description:
         "Intense moisture therapy for parched hair, leaving it soft, smooth, and revitalized.",
       price: "₹900/-",
-      time: "Time (10 mins)",
+      time: "Time (30 mins)",
       spaimage:hairspa2
     },
     {
@@ -35,7 +35,7 @@ const Subhairtreat = () => {
       description:
         "Controls unruly frizz and adds shine for effortlessly manageable, sleek hair.",
       price: "₹900/-",
-      time: "Time (10 mins)",
+      time: "Time (30 mins)",
       spaimage:hairspa3
     },
     {
@@ -44,7 +44,7 @@ const Subhairtreat = () => {
       description:
         "Strengthens and restores brittle, damaged hair with protein-rich treatments.",
       price: "₹900/- ",
-      time: "Time (10 mins)",
+      time: "Time (30 mins)",
       spaimage:hairspa4
     },
     {
@@ -53,7 +53,7 @@ const Subhairtreat = () => {
       description:
         "Targets dandruff at the root while soothing itchiness for a healthier scalp.",
       price: "₹1000/-/- ",
-      time: "Time(15 mins)",
+      time: "Time(30 mins)",
       spaimage:hairspa5
     },
     {
@@ -62,7 +62,7 @@ const Subhairtreat = () => {
       description:
         "A premium scalp & hair detox that eliminates flakes and prevents recurrence.",
       price: "₹1300/-",
-      time: "Time (15 mins)",
+      time: "Time (45 mins)",
       spaimage:hairspa6
     },
   ];
@@ -93,7 +93,7 @@ const Subhairtreat = () => {
 
       <div className="buttons-container">
         <button className="learn-more" onClick={()=>navigate('/Gents')}>Go back</button>
-        <button className="sign-up">Sign Up →</button>
+        <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
       </div>
     </div>
   );

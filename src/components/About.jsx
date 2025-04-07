@@ -29,8 +29,9 @@ const About = ({ backgroundImage }) => {
           </div>
         </div>
         <div className="buttons">
-          <button className="btn-outline">Learn More</button>
-          <button className="btn-filled">Sign Up →</button>
+          {/* <button className="btn-outline">Learn More</button> */}
+          {/* <button className="btn-filled">Sign Up →</button> */}
+          <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
         </div>
       </div>
     </section>

@@ -80,8 +80,8 @@ const Header = () => {
           
           {/* Mobile buttons that only appear in mobile menu */}
           <div className="buttons-mobile">
-            <button className="btn-outline">Learn</button>
-            <button className="btn-filled">Explore</button>
+            {/* <button className="btn-outline">Learn</button> */}
+            <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
           </div>
         </nav>
        

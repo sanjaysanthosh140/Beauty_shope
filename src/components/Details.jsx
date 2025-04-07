@@ -35,8 +35,8 @@ const Details = () => {
           an atmosphere of modern elegance
         </p>
         <div className="buttons">
-          <button className="btn-outline">Button</button>
-          <button className="btn-filled">Button →</button>
+          {/* <button className="btn-outline">Button</button> */}
+          <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
         </div>
       </div>
       <div className="grid-container">

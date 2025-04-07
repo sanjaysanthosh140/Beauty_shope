@@ -1,17 +1,38 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./Service.css";
-import images1 from "../assets/Images/hair-4541781_1280.jpg"
-import images2 from "../assets/Images/istockphoto-984994120-2048x2048.jpg"
-import images3 from "../assets/Images/istockphoto-1174367741-2048x2048.jpg"
-import images4 from "../assets/Images/istockphoto-1340298173-2048x2048.jpg"
-import images5 from "../assets/Images/istockphoto-1328333210-2048x2048.jpg"
-let images =[
-images1,
-images2,
-images3,
-images4,
-images5,
-]
+import sampleImage from "../assets/Images/darkmen2.jpeg"; // Replace with actual images
+import skinman from "../assets/Images/skinman1.jpeg"; // Replace with actual images
+import hariTreat from "../assets/Images/Flux_Dev_A_mysterious_darktoned_background_with_a_sharp_wellli_0.jpeg"
+import liteMakeup from "../assets/Images/womenskin15.png"
+import hdmakeup from "../assets/Images/womenskin16.jpg"
+import haircolor from "../assets/Images/womenskin17.jpg"
+const cards = [
+  {
+    id: 1,
+    image:haircolor
+  },
+  {
+    id: 2,
+    image:sampleImage
+  },
+  {
+    id: 3,
+    image:hdmakeup
+  },
+  {
+    id: 4,
+    image:hariTreat
+  },
+  {
+    id: 5,
+    image:liteMakeup
+  },
+  {
+    id: 6,
+    image:skinman 
+  },
+];
+
   const Service = () => {
   //console.log(images)
   const scrollRef = useRef(null);
@@ -77,23 +98,12 @@ images5,
         </button>
        
         <div className="service-list" ref={scrollRef}>
-          {images.map((image, index) => (
-            <div className="service-card" key={index}>
+          {cards.map((image) => (
+            <div className="service-card" key={image.id}>
               <div className="service-image">
-                <img src={image} alt="Blog post" />
+                <img src={image.image} alt="Blog post" />
               </div>
-              <h3>Blog title heading will go here</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
-              <div className="service-footer">
-                <span className="user-icon">⚪</span>
-                <div>
-                  <strong>Full name</strong>
-                  <p>11 Jan 2022 • 5 min read</p>
-                </div>
-              </div>
+              <h3></h3>
             </div>
           ))}
         </div>

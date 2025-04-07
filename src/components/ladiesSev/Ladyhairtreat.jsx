@@ -12,6 +12,7 @@ import imagespa9 from "./ladyassets/images/womenskin11.jpg"
 import { useNavigate } from "react-router-dom";
 const Ladyhairtreat = () => {
   const navigate = useNavigate()
+
   const cards = [
     {
       id: 1,
@@ -19,7 +20,7 @@ const Ladyhairtreat = () => {
       description:
         "A deeply relaxing hot oil treatment to nourish roots, boost blood circulation, and promote healthy hair growth.",
       price: "₹500/-",
-      time: "Time (10 mins)",
+      time: "Time (25 mins)",
       image:imagespa1
     },
     {
@@ -28,7 +29,7 @@ const Ladyhairtreat = () => {
       description:
         "Intense moisture therapy for parched hair, leaving it soft, smooth, and revitalized.",
       price: "₹1000/-",
-      time: "Time (10 mins)",
+      time: "Time (45 mins)",
       image:imagespa2
     },
     {
@@ -37,7 +38,7 @@ const Ladyhairtreat = () => {
       description:
         "Controls unruly frizz and adds shine for effortlessly manageable, sleek hair.",
       price: "₹1000/-",
-      time: "Time (10 mins)",
+      time: "Time (45 mins)",
       image:imagespa3
     },
     {
@@ -46,7 +47,7 @@ const Ladyhairtreat = () => {
       description:
         "Strengthens and restores brittle, damaged hair with protein-rich treatments.",
       price: "₹1000/- ",
-      time: "Time (10 mins)",
+      time: "Time (45 mins)",
       image:imagespa4
     },
     {
@@ -54,8 +55,8 @@ const Ladyhairtreat = () => {
       title: "Flake-Free Scalp: Anti-Dandruff Treatment",
       description:
         "Targets dandruff at the root while soothing itchiness for a healthier scalp.",
-      price: "₹1200/-/- ",
-      time: "Time(15 mins)",
+      price: "₹1200/-",
+      time: "Time(1 hour)",
       image:imagespa5
     },
     {
@@ -64,7 +65,7 @@ const Ladyhairtreat = () => {
       description:
         "A premium scalp & hair detox that eliminates flakes and prevents recurrence.",
       price: "₹1500/-",
-      time: "Time (15 mins)",
+      time: "Time (45 mins)",
       image:imagespa6
     },
     {
@@ -120,7 +121,7 @@ const Ladyhairtreat = () => {
 
       <div className="buttons-container">
         <button className="learn-more" onClick={()=>navigate('/LadysSrv')}>Go back</button>
-        <button className="sign-up">Sign Up →</button>
+        <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
       </div>
     </div>
   );
