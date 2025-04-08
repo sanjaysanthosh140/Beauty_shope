@@ -33,6 +33,7 @@
   }
   
   .hair-card {
+    position: relative;
     background-color: #111;
     padding: 20px;
     border-radius: 10px;
@@ -73,6 +74,32 @@
     text-decoration: underline;
   }
   
+  /* Add these new styles to your existing CSS */
+
+.card-header {
+  width: 100%;
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.card-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.card-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+
   @media (max-width: 768px) {
     .hair-cards {
       grid-template-columns: repeat(2, 1fr);

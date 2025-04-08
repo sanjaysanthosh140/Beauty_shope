@@ -2,6 +2,7 @@ import React from "react";
 import "./Ladyhaircolor.css";
 import { BiTimer } from "react-icons/bi";
 import { MdAttachMoney, MdColorLens } from "react-icons/md";
+import logo_ from "./ladyassets/images/Logo_min.jpg"
 const Ladyhaircolor = () => {
   const cards = [
     {
@@ -10,11 +11,10 @@ const Ladyhaircolor = () => {
       title: "✨ Hair Foils",
       price: " $180/-",
       description:
-      
         "(The cost may vary depending on the client’s hair length) Dimensional highlights tailored to brighten your natural beauty.Precision-placed foils for sun-kissed luminosity and depth.",
       time: "Time ()",
     },
-    
+
     {
       id: 2,
       icon: "✂️",
@@ -75,6 +75,9 @@ const Ladyhaircolor = () => {
             <div className="hair-card-icon">
               <MdColorLens />
             </div>
+            <div className="card-logo">
+              <img src={logo_} alt="Logo" />
+            </div>
             <h3 className="hair-card-title">{card.title}</h3>
             <h4 className="hair-card-title">
               <MdAttachMoney />
@@ -85,7 +88,9 @@ const Ladyhaircolor = () => {
               <BiTimer />
             </h2>
             <p className="hair-card-desc">{card.description}</p>
-            <a href="tel:+918075958277" target="_self"><button className="sign-up">Book Now→</button></a>
+            <a href="tel:+918075958277" target="_self">
+              <button className="sign-up">Book Now→</button>
+            </a>
           </div>
         ))}
       </div>

@@ -1,5 +1,5 @@
 :root {
-    --footer-bg: #0a0a0a;
+    --footer-bg: #0000;
     --footer-text: white;
     --footer-secondary: #bbb;
     --footer-border: #333;
@@ -245,4 +245,16 @@
       margin-top: 10px;
     }
   }
+  /* Add this to your existing CSS */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
   
+}
+
+.logo-image {
+  max-width: 60px; /* Adjust the size as needed */
+  height: auto;
+
+}

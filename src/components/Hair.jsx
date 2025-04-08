@@ -2,7 +2,7 @@ import React from "react";
 import "./Hair.css";
 import { BiTimer } from 'react-icons/bi';
 import { MdAttachMoney,MdColorLens } from 'react-icons/md'
-
+import logo_ from "../assets/Images/Logo_min.jpg"
 const Hair = () => {
   
   const cards = [
@@ -88,6 +88,9 @@ const Hair = () => {
         {cards.map((card) => (
           <div key={card.id} className="hair-card">
             <div className="hair-card-icon"><MdColorLens/></div>
+            <div className="card-logo">
+                <img src={logo_} alt="Logo" />
+              </div>
             <h3 className="hair-card-title">{card.title}</h3>
             <h4 className="hair-card-title"><MdAttachMoney/>{card.price}</h4>
             <h2 className="hair-card-title">{card.time}<BiTimer/></h2>
